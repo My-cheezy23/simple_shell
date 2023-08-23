@@ -1,0 +1,43 @@
+.TH hsh 1 "August 2023" "1.0" "hsh
+- Implemented Command Manual for Simple Shell"
+
+.SH NAME
+_man_1simple_shell- A Unix Shell
+
+.SH SYNOPSIS
+'_man_1simple_shell'
+
+.SH DESCRIPTION
+_man_1simple_shell, is a Unix shell
+designed to provide a straightforward and user-friendly command-line interface.
+It enables the execution of commands from both the interactive terminal and script files.
+
+.SH OPTIONS
+-File
+
+.SH COMMANDS
+The _man_1simple_shell supports the following commands:
+1. cd [dir]: Change the working directory to 'dir' or to the home directory if 'dir' is omitted.
+2. exit: Terminate the shell.
+3. env: Display the current environment variables.
+4. setenv [var] [value]: Set the environment variable 'var' to 'value'.
+5. unsetenv [var]: Remove the specified environment variable 'var'.
+
+.SH FILES
+1. '_man_1simple_shell.c': The source code of the _man_1simple_shell.
+2. 'README.md': The shell's official README file.
+
+.SH EXAMPLES
+1. To launch the _man_1simple_shell, open a terminal and type:
+$ hsh
+2. Execute a command by typing it at the prompt and pressing Enter:
+$ ls -l
+3. To exit the shell, enter:
+$ exit
+
+.SH SEE ALSO
+'bash'(1), 'sh'(1) - Standard Unix shell commands.
+
+.SH AUTHORS
+_man_1simple_shell was developed by Lewis Machoka and Olive Maina.
+
