@@ -1,15 +1,15 @@
 #include "simple_shell.h"
 
 /**
- * handle_error_and_exit - Displays an error message
+ * panic - Displays an error message
  * and terminates the program.
- * @error_message: The error message to be displayed.
+ * @message: The error message to be displayed.
  * Authors: olive x lewis
  */
 
-void handle_error_and_exit(char *error_message)
+void panic(char *message)
 {
-	perror(error_message);
+	perror(message);
 	exit(EXIT_FAILURE);
 }
 

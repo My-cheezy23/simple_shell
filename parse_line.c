@@ -18,7 +18,7 @@ char **parse_line(char *line)
 	{
 		panic("parse_line failed: allocaton error");
 	}
-	token = strtok(line, delim);
+	token = strtok(line, TOKEN_DELIM);
 	while (token != NULL)
 	{
 		if (token[0] == '#')

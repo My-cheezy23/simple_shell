@@ -10,17 +10,16 @@
 int echo_builtin(char **args)
 {
 	int i = 1;
-	char pid_str[20];
+	char pid[20];
 	int pid_len;
 
 	while (args[i] != NULL)
 	{
 		if (strcmp(args[i], "$$") == 0)
 		{
-			char pid_str[20];
-			int pid_len = sprintf(pid_str, "%d", getpid());/*Converts PID to a string*/
+			pid_len = sprintf(pid, "%d", getpid());/*Converts PID to a string*/
 			/*Writes PID to std out*/
-			write(STDOUT_FILENO, pid_str, pid_len);
+			write(STDOUT_FILENO, pid, pid_len);
 
 		}
 		else
