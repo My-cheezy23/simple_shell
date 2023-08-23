@@ -1,11 +1,12 @@
-#include <stdio.h>
-#include <stdlib.h>
-#include <string.h>
-/**
- * parse_line - is the main function
+#include <simple_shell.h>
+
+/*
+ * parse_line - Parses a line into an array of tokens.
  * @line: line of input
- * return: an array of token, NULL on error
+ * Authors: olive x lewis
+ * Return: an array of token, NULL on error
  */
+
 char **parse_line(char *line)
 {
 	int buffer_size = BUFFER_SIZE;

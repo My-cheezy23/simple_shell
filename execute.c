@@ -1,11 +1,12 @@
-#include <stdio.h>
-#include <stdlib.h>
-#include <unistd.h>
+#include <simple_shell.h>
+
 /**
  * execute - executes a coomand
  * @args: array of arguments
- * return: 1 on success 0 on failure
+ * Authors: olive x lewis
+ * Return: 1 on success 0 on failure
  */
+
 int execute(char **args)
 {
 	char **args1 = args;

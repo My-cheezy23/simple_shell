@@ -1,10 +1,12 @@
-#include <stdio.h>
-#include <stdlib.h>
+#include <simple_shell.h>
+
 /**
  * read_line - is the main function
  * description: reads a line from stdin and stores it in buffer
- * return:pointer to the line read
+ * Authors: olive x lewis
+ * Return:pointer to the line read
  */
+
 char *read_line(void)
 {
 	char *line = NULL;

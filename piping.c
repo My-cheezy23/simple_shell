@@ -1,15 +1,12 @@
-#include <stdio.h>
-#include <stdlib.h>
-#include <errno.h>
-#include <unistd.h>
-#include <sys/types.h>
-#include <sys/wait.h>
+#include <simple_shell.h>
+
 /**
  * piping - pipes two commands
  * @args1:frist command
  * @args2:second command
- * return: 1 on success 0 on failure
+ * Return: 1 on success 0 on failure
  */
+
 int piping(char **args1, char **args2)
 {
 	int pipefd[2];

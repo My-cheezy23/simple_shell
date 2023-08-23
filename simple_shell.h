@@ -47,5 +47,8 @@ char *getpid_string(void);
 size_t _strlen(const char *s);
 int _strcmp(const char *s1, const char *s2);
 int logical(char **args);
+extern char **environ;
+size_t string_length(const char *str);
+void handle_error_and_exit(char *error_message);
 
 #endif

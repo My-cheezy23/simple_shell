@@ -1,5 +1,4 @@
-#include <stdio.h>
-#include <stdlib.h>
+#include <simple_shell.h>
 
 /**
  * main - Entry point for the shell program
@@ -10,6 +9,7 @@
  * * Authors: olive x lewis
  * Return: EXIT_SUCCESS upon successful execution
  */
+
 int main(int argc, char **argv)
 {
 	char *command_line;
