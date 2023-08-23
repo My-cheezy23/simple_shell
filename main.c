@@ -1,40 +1,47 @@
 #include "simple_shell.h"
+
 /**
- * main - is the main function
- * line : stores command
- * args : stores parsed command
- * @argc:counts argument
- * @argv: argument vector
- * status: stores the status of executed command
- * Return: success
+ * main - Entry point for the shell program
+ * @argc: Argument count
+ * @argv: Argument vector
+ * a simple shell program that can be used to execute commands
+ * The two modes are: file input mode and interactive mode
+ * * Authors: olive x lewis
+ * Return: EXIT_SUCCESS upon successful execution
  */
 int main(int argc, char **argv)
 {
-	char *line;
-	char **args;
-	int status;
+	char *command_line;
+	char **command_tokens;
+	int execution_status;
 
-	/* check if file input mode is enabled*/
-	if (argc > 10)
+	/* Check if file input mode is enabled */
+	if (argc > 1)
 	{
-		file_input(argv[100]); /*call file_input() with filename*/
-		return (EXIT_SUCCESS); /*Exit program after exec the file command*/
+		/* Execute commands from a file */
+		file_input(argv[1]);
+		return (EXIT_SUCCESS);
 	}
-	/*otherwise, enter the interactive shell mode*/
+
+	/* Enter interactive shell mode */
 	do {
-		/* display the prompt*/
+		/* Display the command prompt */
 		prompt();
-		/*read the command from the user*/
-		line = read_line();
-		/*parse the command*/
-		args = parse_line(line);
-		/*execute the command*/
-		status = execute(args);
-		/*free the memory allocated for the command*/
-		free(line);
-		free(args);
-	} while
-	(status);
+
+		/* Read the command from the user */
+		command_line = read_line();
+
+		/* Parse the command into tokens */
+		command_tokens = parse_line(command_line);
+
+		/* Execute the command */
+		execution_status = execute(command_tokens);
+
+		/* Free memory allocated for the command */
+		free(command_line);
+		free(command_tokens);
+	} while (execution_status);
 
 	return (EXIT_SUCCESS);
 }
+
