@@ -7,7 +7,7 @@
 
 void prompt(void)
 {
-	char *prompt_message = "SimpleShell$ ";
+	char *prompt_message = "$";
 	/*Updated prompt message for clarity*/
 
 	if (isatty(STDIN_FILENO))
