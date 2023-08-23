@@ -1,4 +1,5 @@
-#include "simple_shell.h"
+#include <stdio.h>
+#include <stdlib.h>
 
 /**
  * main - Entry point for the shell program

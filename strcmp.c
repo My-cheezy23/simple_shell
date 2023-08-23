@@ -1,4 +1,5 @@
-#include "simple_shell.h"
+#include <stdio.h>
+#include <stdlib.h>
 /**
  * _strcmp - compares 2 strings
  * @s1: frist string

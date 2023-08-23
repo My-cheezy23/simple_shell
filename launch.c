@@ -1,4 +1,6 @@
-#include "simple_shell.h"
+#include <stdio.h>
+#include <stdlib.h>
+
 
 /**
  * launch - Launches a new process to execute a given command.

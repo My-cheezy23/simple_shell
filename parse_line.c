@@ -1,4 +1,6 @@
-#include "simple_shell.h"
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
 /**
  * parse_line - is the main function
  * @line: line of input
@@ -15,7 +17,7 @@ char **parse_line(char *line)
 	{
 		panic("parse_line failed: allocaton error");
 	}
-	token = strtok(line, TOKEN_DELIM);
+	token = strtok(line, delim);
 	while (token != NULL)
 	{
 		if (token[0] == '#')

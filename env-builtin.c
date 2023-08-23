@@ -1,4 +1,5 @@
-#include "simple_shell.h"
+#include <stdio.h>
+#include <stdlib.h>
 /**
  * env_builtin- is the main function
  * @args:terminates command line arguments to NULL

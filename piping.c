@@ -1,4 +1,9 @@
-#include "simple_shell.h"
+#include <stdio.h>
+#include <stdlib.h>
+#include <errno.h>
+#include <unistd.h>
+#include <sys/types.h>
+#include <sys/wait.h>
 /**
  * piping - pipes two commands
  * @args1:frist command
