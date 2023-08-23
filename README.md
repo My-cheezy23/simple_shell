@@ -19,7 +19,7 @@ the prompt again. The shell **handles errors** and the **“end of file”** con
 
 **Built-in Commands**
 
-Built-in commands include:
+	Built-in commands include:
 	exit: Exit the shell.
 	env: Print current environment.
 	cd: Change the current directory.
