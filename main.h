@@ -1,5 +1,6 @@
-#define SIMPLE_SHELL_H
 #ifndef SIMPLE_SHELL_H
+#define SIMPLE_SHELL_H
+
 /*header  files */
 #include <stdio.h>
 #include <stdlib.h>
@@ -14,12 +15,14 @@
 #include <errno.h>
 #include <dirent.h>
 #include <ctype.h>
+
 /* constants */
 #define BUFFER_SIZE 1024
 #define TOKEN_DELIM "\t\r\n\a"
 #define ARG_MAX 4096
 #define AND 1
 #define OR 2
+
 /* function prototypes */
 void prompt (void);
 char *read_line(void);
