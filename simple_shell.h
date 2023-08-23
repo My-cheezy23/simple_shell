@@ -29,7 +29,7 @@ char *read_line(void);
 char **parse_line(char *line);
 int execute(char **args);
 void panic(char *message);
-int cd_builtin(char *message);
+int cd_builtin(char **args);
 int piping(char **args1, char **args2);
 /*int env_builtin(void);*/
 /*char *_getenv(const char *name);*/
@@ -41,7 +41,7 @@ int exit_status(char **args);
 /*int run_script(char *filename);*/
 int launch(char **args);
 int file_input(char *filename);
-ssize_t my_getline(char **lineptr, size_t *n, File  *stream);
+ssize_t my_getline(char **lineptr, size_t *n, FILE *stream);
 int echo_builtin(char **args);
 char *getpid_string(void);
 size_t _strlen(const char *s);
