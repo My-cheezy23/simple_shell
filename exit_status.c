@@ -20,7 +20,7 @@ int exit_status(char **args)
 		if (exit_code == 0 && args[1][0] != '0')
 		{
 			fprintf(stderr, "hsh: exit: %s: numeric argument required\n", args[1]);
-			return (1);  /*Error code changed to 2*/
+			return (2);  /*Error code changed to 2*/
 		}
 	}
 
